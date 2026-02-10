@@ -1,0 +1,199 @@
+---
+title: Publishing
+description: Deploy your learning content to the web
+---
+
+# Publishing
+
+When your learning content is ready, publish it to make it accessible to learners. Impact Learning provides multiple publishing options to fit your needs.
+
+## Publishing Options
+
+### Public Publishing
+
+Content is accessible to anyone with the link:
+
+- No login required for learners
+- Shareable URL for easy distribution
+- Indexed by search engines (optional)
+- Best for: Open courses, marketing content, public resources
+
+### Restricted Publishing
+
+Content requires authentication or a special link:
+
+- Only authorized users can access
+- Share links with optional passwords
+- Access tracking and analytics
+- Best for: Internal training, paid courses, sensitive content
+
+## How to Publish
+
+### Step 1: Open the Publish Dialog
+
+1. Click the **Publish** button in the preview toolbar
+2. Or use the keyboard shortcut (Cmd/Ctrl + Shift + P)
+
+### Step 2: Configure Settings
+
+| Setting | Description |
+|---------|-------------|
+| **Title** | Display name for the published content |
+| **Description** | Brief summary shown in previews and shares |
+| **Visibility** | Public or restricted access |
+
+### Step 3: Publish
+
+Click **Publish** and wait for the build to complete. You'll see:
+
+1. **Building** — Content is being prepared
+2. **Uploading** — Files are being deployed
+3. **Ready** — Your content is live!
+
+## Your Published URL
+
+After publishing, you get a permanent URL:
+
+```
+https://impactlearning.app/p/{publishId}/
+```
+
+This URL remains stable even if you update the content later.
+
+### Latest Version URL
+
+Each project also has a "latest" URL that always points to the most recent publish:
+
+```
+https://impactlearning.app/p/chat/{chatId}/
+```
+
+Share this URL if you want learners to always access the newest version.
+
+## Sharing Published Content
+
+### Direct Link
+
+Copy the URL and share via:
+
+- Email
+- Messaging apps
+- Learning Management Systems
+- Intranet pages
+
+### Embed
+
+Embed your content in other websites:
+
+```html
+<iframe 
+  src="https://impactlearning.app/p/{publishId}/"
+  width="100%" 
+  height="600"
+  frameborder="0"
+></iframe>
+```
+
+### QR Code
+
+Generate a QR code for the URL to share in:
+
+- Printed materials
+- Presentations
+- Physical spaces
+
+## Custom Domains (Pro+)
+
+Pro and Business users can connect custom domains:
+
+```
+training.yourcompany.com → Your Impact Learning content
+```
+
+**Setup:**
+
+1. Go to Settings → Domains
+2. Add your domain
+3. Configure DNS records as shown
+4. Wait for verification
+
+## Restricted Access Options
+
+### Share Links
+
+Create special links for external reviewers or learners:
+
+1. Open the Publish dialog
+2. Click **Create Share Link**
+3. Optionally set a password
+4. Set an expiration date
+5. Share the generated link
+
+Recipients can access without logging into Impact Learning.
+
+### Organization Access (Business)
+
+Business plan users can restrict access to their organization:
+
+- Only users with company email can access
+- SSO integration for seamless login
+- Access logs for compliance
+
+## Updating Published Content
+
+### Republish
+
+After making changes:
+
+1. Click **Publish** again
+2. Choose to update the existing publish
+3. Content updates at the same URL
+
+### Version History
+
+Track your publish history:
+
+- See all previous versions
+- Roll back if needed
+- Compare changes between versions
+
+## Publishing Best Practices
+
+### Before Publishing
+
+- [ ] Test all interactive elements
+- [ ] Check mobile view
+- [ ] Review for typos and errors
+- [ ] Verify images and audio load correctly
+
+### For Internal Training
+
+- Use restricted visibility
+- Create share links with expiration
+- Track completion through your LMS
+
+### For Public Content
+
+- Write a clear description for SEO
+- Test the share preview
+- Consider a custom domain for branding
+
+## Troubleshooting
+
+### Publish stuck on "Building"?
+
+- Wait a few moments — complex content takes longer
+- Check for errors in the chat history
+- Try refreshing the page
+
+### Content not updating?
+
+- Clear your browser cache
+- Wait 1-2 minutes for CDN propagation
+- Verify you're viewing the correct URL
+
+### Custom domain not working?
+
+- Verify DNS records are correct
+- DNS propagation can take up to 48 hours
+- Check the domain status in Settings

@@ -1,0 +1,17 @@
+{
+  "title": "Features",
+  "pages": [
+    "index",
+    "---Build---",
+    "live-preview",
+    "templates",
+    "source-materials",
+    "---AI Generation---",
+    "content-generation",
+    "image-generation",
+    "audio-narration",
+    "---Deploy---",
+    "publishing",
+    "scorm-export"
+  ]
+}

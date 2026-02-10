@@ -1,0 +1,87 @@
+---
+title: AI Model Providers
+description: Large language models powering Impact Learning content generation
+---
+
+# AI Model Providers
+
+Impact Learning supports multiple AI providers, giving you flexibility to choose the best model for your learning content. All models are accessed through a unified routing layer.
+
+## Supported Providers
+
+### Anthropic (Claude)
+
+Claude models excel at nuanced understanding and creative content generation.
+
+| Model | Best For | Context Window |
+|-------|----------|----------------|
+| **Claude Opus 4.5** | Complex analysis, creative writing, detailed scenarios | 200K tokens |
+| **Claude Sonnet 4.5** | Balanced performance for most tasks (default) | 200K tokens |
+| **Claude Haiku 4.5** | Fast responses, simple edits | 200K tokens |
+
+### OpenAI (GPT)
+
+GPT models offer strong code generation and reasoning capabilities.
+
+| Model | Best For | Context Window |
+|-------|----------|----------------|
+| **GPT-5.2** | Most capable, complex reasoning | 200K tokens |
+| **GPT-5.1-Codex** | Code generation, technical content | 400K tokens |
+| **GPT-5.1-Codex-Max** | Maximum capability code tasks | 400K tokens |
+
+### Google (Gemini)
+
+Gemini models feature massive context windows for processing large documents.
+
+| Model | Best For | Context Window |
+|-------|----------|----------------|
+| **Gemini 3 Pro** | Complex reasoning, analysis | 1M tokens |
+| **Gemini 3 Flash** | Fast reasoning with huge context | 1M tokens |
+
+### xAI (Grok)
+
+Grok offers extremely large context windows for comprehensive content processing.
+
+| Model | Best For | Context Window |
+|-------|----------|----------------|
+| **Grok 4.1 Fast** | Fast processing with massive context | 2M tokens |
+
+### Mistral
+
+Mistral models are optimized for code generation.
+
+| Model | Best For | Context Window |
+|-------|----------|----------------|
+| **Devstral 2** | Specialized coding tasks | 256K tokens |
+
+## Model Selection
+
+You can select your preferred model in the chat interface. Impact will use your selected model for:
+
+- Generating learning content
+- Creating interactive scenarios
+- Writing assessments and quizzes
+- Producing code for gamified elements
+
+<Callout type="info">
+Different tasks may benefit from different models. Use faster models like Claude Haiku for quick edits, and more capable models like Claude Opus or GPT-5.2 for complex scenario generation.
+</Callout>
+
+## Routing Options
+
+Impact supports two routing methods:
+
+### Vercel AI Gateway (Default)
+Routes requests through Vercel's AI Gateway for unified access to all providers.
+
+### OpenRouter
+Alternative routing option that provides access to additional models and pricing options.
+
+## Model Capabilities
+
+All supported models include:
+
+- **Vision**: Can analyze uploaded images and screenshots
+- **Code Generation**: Create interactive components and gamified elements
+- **Reasoning**: Design branching scenarios and assessments
+- **Long Context**: Process large documents and source materials

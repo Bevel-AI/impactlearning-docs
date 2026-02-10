@@ -1,0 +1,302 @@
+---
+title: Troubleshooting
+description: Fix common issues and unexpected outputs in Impact Learning
+---
+
+# Troubleshooting
+
+When results don't match your expectations, these troubleshooting strategies can help you get back on track.
+
+## Common Issues and Solutions
+
+### Output is too generic
+
+**Symptom:** Content feels templated, not specific to your needs.
+
+**Cause:** Prompt lacks specific context about your organization, audience, or goals.
+
+**Solution:** Add specificity:
+
+```
+Before: "Create safety training"
+
+After: "Create forklift safety training for our Amazon warehouse 
+in Phoenix. The audience is seasonal workers (18-25) who may not 
+speak English as a first language. Focus on the most common 
+accident types we've seen: tip-overs and pedestrian collisions."
+```
+
+### Content is too long
+
+**Symptom:** Output is overwhelming, takes too long to complete.
+
+**Cause:** No constraints on length or time.
+
+**Solution:** Add explicit limits:
+
+```
+Keep this training to:
+- 10 minutes maximum completion time
+- 3 key concepts (no more)
+- 5 quiz questions
+- 1 scenario (not multiple)
+```
+
+### Content is too short
+
+**Symptom:** Output feels incomplete or superficial.
+
+**Cause:** Prompt didn't indicate depth needed.
+
+**Solution:** Request more detail:
+
+```
+Expand on this by:
+- Adding more explanation for each concept
+- Including 2-3 examples per section
+- Adding "deep dive" optional content
+- Including a comprehensive quiz (15+ questions)
+```
+
+### Wrong tone or style
+
+**Symptom:** Content sounds too formal, too casual, or doesn't match brand.
+
+**Cause:** Style expectations not communicated.
+
+**Solution:** Define tone explicitly:
+
+```
+Adjust the writing style:
+- Use "you" and "we" instead of "the learner" and "the company"
+- Write at an 8th-grade reading level
+- Be encouraging, not instructive
+- Add subtle humor where appropriate
+- Avoid corporate jargon entirely
+```
+
+### Technical errors in preview
+
+**Symptom:** Preview shows errors, missing content, or broken layouts.
+
+**Cause:** Usually a generation issue that can be fixed.
+
+**Solution:** Report what you see:
+
+```
+The preview shows some issues:
+- Image on slide 3 isn't loading
+- Text overlaps the button on mobile view
+- Quiz submit button isn't working
+
+Please fix these technical issues.
+```
+
+### AI misunderstood the request
+
+**Symptom:** Output is well-made but completely different from what you wanted.
+
+**Cause:** Ambiguous language or unclear context.
+
+**Solution:** Clarify and try again:
+
+```
+I think there was a misunderstanding. When I said "cards," I meant 
+flashcard-style learning cards that flip to show answers, not 
+the card-based navigation you created.
+
+Please recreate using flashcards instead.
+```
+
+## Debugging Prompts
+
+### When something breaks
+
+Use this pattern to get help:
+
+```
+I'm seeing an issue:
+
+WHAT I EXPECTED: [Describe what should happen]
+WHAT ACTUALLY HAPPENS: [Describe what you see]
+WHEN IT OCCURS: [Steps to reproduce]
+
+Please help me fix this.
+```
+
+### When you're stuck
+
+If you're not sure how to proceed:
+
+```
+I want to create [goal] but I'm not sure how to approach it.
+My constraints are:
+- [Constraint 1]
+- [Constraint 2]
+
+Can you suggest an approach and outline before we build it?
+```
+
+### When results vary
+
+If you're getting inconsistent results:
+
+```
+I've tried this prompt twice and got very different results.
+What I need is consistent:
+- [Requirement 1]
+- [Requirement 2]
+
+Can you ensure these elements are always included?
+```
+
+## Prevention Strategies
+
+### Use Checklists
+
+Before complex prompts, ensure you've included:
+
+- [ ] Clear goal statement
+- [ ] Target audience description
+- [ ] Specific requirements (numbered)
+- [ ] Constraints (time, length, format)
+- [ ] Style/tone guidance
+- [ ] Success criteria
+
+### Start with an Outline
+
+For complex projects:
+
+```
+Before building the full content, give me an outline showing:
+- Module/section structure
+- Key content points for each
+- Estimated duration
+- Interactive elements planned
+
+Once I approve, we'll build each section.
+```
+
+### Define Non-Goals
+
+Sometimes saying what you don't want is as helpful as what you do:
+
+```
+Important: This training should NOT include:
+- Historical background (focus on current procedures)
+- Technical specifications (keep it practical)
+- Legal disclaimers (we'll add those separately)
+- Optional advanced content (this is basics only)
+```
+
+## Getting Help
+
+### If content won't generate
+
+```
+I'm trying to create [X] but it's not working.
+I've tried: [What you attempted]
+Error/issue: [What happens]
+
+What should I try instead?
+```
+
+### If you need a different approach
+
+```
+The approach we've been taking isn't working for my needs.
+The problem is: [Describe the issue]
+What I actually need is: [Describe the goal]
+
+Can we try a completely different approach?
+```
+
+### If you're not sure what's possible
+
+```
+Is it possible to create [X] with Impact Learning?
+I'm trying to achieve: [Goal]
+Constraints I have: [Limitations]
+
+If yes, what's the best approach?
+If no, what's the closest alternative?
+```
+
+## Recovery Strategies
+
+### When you've gone down the wrong path
+
+```
+Let's pause here. The direction we've taken isn't working.
+I'd like to go back to basics and start with just:
+- [Simple element 1]
+- [Simple element 2]
+
+Once those work, we can add complexity.
+```
+
+### When content is partially good
+
+```
+Some of this works well:
+- KEEP: [What to preserve]
+
+But other parts need to change:
+- CHANGE: [What to modify]
+- REMOVE: [What to delete]
+
+Please update accordingly.
+```
+
+### When you need to reset
+
+```
+Let's start fresh. Clear our previous attempts and create
+a new [content type] with these requirements:
+
+[New, clearer requirements]
+```
+
+## FAQ
+
+<Accordions>
+<Accordion title="Why does the same prompt give different results?">
+AI models have some variability in their outputs. To get more consistent results:
+- Be more specific in your requirements
+- Include examples of what you want
+- Define constraints clearly
+- Save/publish versions you like
+</Accordion>
+
+<Accordion title="How do I fix broken interactive elements?">
+Describe the exact issue you see:
+- What should happen when you click/interact
+- What actually happens instead
+- Any error messages visible
+
+The AI can usually fix technical issues when given specific details.
+</Accordion>
+
+<Accordion title="Can I undo changes?">
+There's no automatic undo, but you can:
+- Describe the previous state and ask to restore it
+- Reference earlier content in the conversation
+- Keep copies of versions you like by publishing them
+</Accordion>
+
+<Accordion title="What if the AI keeps making the same mistake?">
+Try:
+- Rephrasing your requirement differently
+- Giving an example of correct vs incorrect
+- Breaking the task into smaller steps
+- Being explicit: "Do NOT [thing to avoid]"
+</Accordion>
+
+<Accordion title="How do I report bugs?">
+Use the support channel with:
+- What you were trying to do
+- What happened instead
+- Steps to reproduce
+- Screenshots if helpful
+</Accordion>
+</Accordions>

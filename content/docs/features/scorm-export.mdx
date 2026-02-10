@@ -1,0 +1,196 @@
+---
+title: SCORM Export
+description: Export your content as SCORM packages for LMS integration
+---
+
+# SCORM Export
+
+Export your Impact Learning content as SCORM packages to use in any Learning Management System (LMS). SCORM is the industry standard for e-learning content interoperability.
+
+## What is SCORM?
+
+**SCORM** (Sharable Content Object Reference Model) is a set of standards that allows e-learning content to work with any compliant LMS. When you export as SCORM:
+
+- Content can be uploaded to your organization's LMS
+- Learner progress is tracked automatically
+- Completion status is reported to the LMS
+- Works with thousands of LMS platforms
+
+## SCORM Versions
+
+Impact Learning exports **SCORM 1.2** packages, which are:
+
+- Compatible with virtually all LMS platforms
+- Well-tested and reliable
+- Supported by: Moodle, Canvas, Blackboard, SAP SuccessFactors, Cornerstone, and more
+
+## How to Export
+
+### Step 1: Access Export
+
+1. Open your project
+2. Click the **Publish** button
+3. Select **Export SCORM**
+
+### Step 2: Configure Package
+
+| Setting | Description |
+|---------|-------------|
+| **Title** | Course title shown in the LMS |
+| **Identifier** | Unique ID for the package |
+
+### Step 3: Download
+
+Click **Export** and the SCORM package downloads as a `.zip` file:
+
+```
+your-course-name.zip
+```
+
+## Uploading to Your LMS
+
+### General Process
+
+1. Log into your LMS as an administrator
+2. Navigate to course/content management
+3. Choose "Import SCORM" or "Add SCORM Package"
+4. Upload the `.zip` file
+5. Configure course settings
+6. Publish to learners
+
+### LMS-Specific Guides
+
+<Accordions>
+<Accordion title="Moodle">
+1. Go to your course
+2. Turn editing on
+3. Add an activity → SCORM package
+4. Upload the ZIP file
+5. Save and display
+</Accordion>
+
+<Accordion title="Canvas">
+1. Go to Settings → Import Course Content
+2. Select "SCORM/AICC"
+3. Upload the ZIP file
+4. Import
+5. Publish the module
+</Accordion>
+
+<Accordion title="Blackboard">
+1. Go to Content → Build Content
+2. Select "Content Package (SCORM)"
+3. Browse and upload the ZIP file
+4. Set availability options
+5. Submit
+</Accordion>
+
+<Accordion title="Other LMS">
+Consult your LMS documentation for SCORM import instructions. The process is similar across platforms.
+</Accordion>
+</Accordions>
+
+## What's Included in the Package
+
+Your SCORM export contains:
+
+| Component | Description |
+|-----------|-------------|
+| `imsmanifest.xml` | SCORM manifest describing the content structure |
+| `index.html` | Entry point for the learning content |
+| `/assets/` | JavaScript, CSS, and media files |
+| `/images/` | Generated and uploaded images |
+| `/audio/` | Generated narration files |
+
+## Tracking and Completion
+
+### Progress Tracking
+
+The exported content reports to the LMS:
+
+- **Completion status** — Whether the learner finished
+- **Success status** — Pass/fail if assessments exist
+- **Score** — Percentage if scoring is enabled
+
+### Setting Completion Criteria
+
+Before exporting, configure how completion is determined:
+
+```
+This course should mark as complete when the learner:
+- Views all slides, OR
+- Scores 80% on the final quiz, OR  
+- Reaches the final page
+```
+
+The AI will implement appropriate SCORM tracking.
+
+## Plan Availability
+
+| Plan | SCORM Export |
+|------|--------------|
+| Free | — |
+| Pro | ✓ Unlimited exports |
+| Business | ✓ Unlimited exports |
+| Enterprise | ✓ Unlimited exports |
+
+## Best Practices
+
+### Before Exporting
+
+- Test all interactive elements in the preview
+- Ensure completion criteria are clear
+- Verify audio and images load correctly
+- Test in mobile view (many LMS users access via mobile)
+
+### Testing in LMS
+
+After uploading to your LMS:
+
+1. Preview as a learner
+2. Complete the entire course
+3. Verify progress is tracked
+4. Check completion status updates
+5. Test on different devices
+
+### Version Management
+
+- Keep copies of exported SCORM packages
+- Name files with version numbers: `safety-training-v2.zip`
+- Document changes between versions
+
+## Troubleshooting
+
+### Package won't upload?
+
+- Verify the file is a `.zip` archive
+- Check your LMS file size limits
+- Ensure the package isn't corrupted (re-export)
+
+### Content not displaying?
+
+- Some LMS platforms require specific browser settings
+- Check if pop-up blockers are interfering
+- Verify the SCORM player settings in your LMS
+
+### Progress not tracking?
+
+- Complete the entire course to trigger tracking
+- Check LMS SCORM settings for tracking options
+- Some actions (like browser close) may not save progress
+
+### Audio/images missing?
+
+- Large media files may exceed LMS limits
+- Re-export with compressed assets
+- Host large media externally and link to it
+
+## Comparison: Publish vs. SCORM
+
+| Feature | Web Publish | SCORM Export |
+|---------|-------------|--------------|
+| **Hosting** | Impact Learning servers | Your LMS |
+| **Updates** | Instant republish | Re-upload package |
+| **Tracking** | Impact analytics | LMS tracking |
+| **Access** | URL sharing | LMS enrollment |
+| **Best for** | Quick sharing, external audiences | Internal training, compliance |

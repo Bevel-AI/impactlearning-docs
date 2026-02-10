@@ -3,7 +3,12 @@
   "pages": [
     "index",
     "getting-started",
+    "plans-and-credits",
     "---Features---",
-    "...features"
+    "...features",
+    "---Prompt Engineering---",
+    "...prompt-engineering",
+    "---Integrations---",
+    "...integrations"
   ]
 }

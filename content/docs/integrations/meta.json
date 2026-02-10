@@ -1,0 +1,10 @@
+{
+  "title": "Integrations",
+  "pages": [
+    "index",
+    "ai-models",
+    "image-generation",
+    "audio-generation",
+    "supabase"
+  ]
+}

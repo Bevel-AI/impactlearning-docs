@@ -1,0 +1,10 @@
+{
+  "title": "Prompt Engineering",
+  "pages": [
+    "index",
+    "effective-prompts",
+    "prompt-patterns",
+    "iterating",
+    "troubleshooting"
+  ]
+}
